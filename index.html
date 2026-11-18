@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apple-style homepage</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav__in">
+    <a class="nav__logo" href="#" aria-label="Home">
+      <svg width="16" height="18" viewBox="0 0 16 18" aria-hidden="true"><circle cx="8" cy="10" r="6.5" fill="currentColor"/><path d="M8 4c0-2 1.2-3.4 3-3.8C11 2.200 9.800 3.800 8 4z" fill="currentColor"/></svg>
+    </a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#store">Store</a></li>
+      <li><a href="#mac">Mac</a></li>
+      <li><a href="#ipad">iPad</a></li>
+      <li><a href="#iphone">iPhone</a></li>
+      <li><a href="#watch">Watch</a></li>
+      <li><a href="#airpods">AirPods</a></li>
+      <li><a href="#support">Support</a></li>
+    </ul>
+    <div class="nav__tools">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="6" r="4.5"/><path d="M9.500 9.500L14 14"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Bag">
+        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="5" width="12" height="10" rx="2"/><path d="M4.500 5V4a2.500 2.500 0 015 0v1"/></svg>
+      </button>
+      <button class="icon-btn nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </div>
+  <form class="search" id="search" role="search">
+    <input type="search" placeholder="Search apple-style.com" aria-label="Search">
+  </form>
+</nav>
+
+<main>
+  <section class="hero hero--dark" id="iphone">
+    <p class="hero__eyebrow">New</p>
+    <h1 class="hero__title">iPhone Pro</h1>
+    <p class="hero__sub">Built for what comes next.</p>
+    <p class="links"><a class="link" href="#">Learn more</a><a class="link" href="#">Buy</a></p>
+    <div class="hero__media">
+      <div class="phone parallax"><img src="images/iphone.jpg" alt="" onerror="this.remove()"></div>
+    </div>
+  </section>
+
+  <section class="hero hero--light" id="mac">
+    <h2 class="hero__title hero__title--md">MacBook Air</h2>
+    <p class="hero__sub">Lean. Mean. Thin and light.</p>
+    <p class="links"><a class="link" href="#">Learn more</a><a class="link" href="#">Buy</a></p>
+    <div class="hero__media">
+      <div class="laptop parallax"><div class="laptop__screen"><img src="images/macbook.jpg" alt="" onerror="this.remove()"></div><div class="laptop__base"></div></div>
+    </div>
+  </section>
+
+  <section class="grid">
+    <article class="tile tile--dark" id="watch">
+      <h2 class="tile__title">Watch</h2>
+      <p class="tile__sub">Your day, on your wrist.</p>
+      <p class="links"><a class="link" href="#">Learn more</a><a class="link" href="#">Buy</a></p>
+      <div class="tile__media"><div class="watch"><img src="images/watch.jpg" alt="" onerror="this.remove()"></div></div>
+    </article>
+    <article class="tile tile--light" id="ipad">
+      <h2 class="tile__title">iPad</h2>
+      <p class="tile__sub">Touch, draw and type on one magical device.</p>
+      <p class="links"><a class="link" href="#">Learn more</a><a class="link" href="#">Buy</a></p>
+      <div class="tile__media"><div class="tablet"><img src="images/ipad.jpg" alt="" onerror="this.remove()"></div></div>
+    </article>
+    <article class="tile tile--light" id="airpods">
+      <h2 class="tile__title">AirPods</h2>
+      <p class="tile__sub">Sound that follows you.</p>
+      <p class="links"><a class="link" href="#">Learn more</a><a class="link" href="#">Buy</a></p>
+      <div class="tile__media"><div class="pods"><i></i><i></i></div></div>
+    </article>
+    <article class="tile tile--dark" id="store">
+      <h2 class="tile__title">Trade in</h2>
+      <p class="tile__sub">Get credit toward your next device.</p>
+      <p class="links"><a class="link" href="#">See what yours is worth</a></p>
+      <div class="tile__media"><div class="card"></div></div>
+    </article>
+  </section>
+</main>
+
+<footer class="footer" id="support">
+  <div class="footer__in">
+    <p class="footer__note">This is a learning project, built from scratch and not affiliated with Apple Inc. Product names are placeholders.</p>
+    <div class="footer__cols">
+      <div><h3>Shop</h3><a href="#">Mac</a><a href="#">iPad</a><a href="#">iPhone</a><a href="#">Watch</a></div>
+      <div><h3>Account</h3><a href="#">Manage account</a><a href="#">Store account</a></div>
+      <div><h3>Support</h3><a href="#">Help</a><a href="#">Contact us</a><a href="#">Repairs</a></div>
+      <div><h3>About</h3><a href="#">Newsroom</a><a href="#">Careers</a><a href="#">Privacy</a></div>
+    </div>
+    <p class="footer__legal">Copyright © 2026 Your Name. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
